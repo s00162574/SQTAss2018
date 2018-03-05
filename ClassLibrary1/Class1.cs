@@ -11,7 +11,7 @@ namespace ClassLibrary1
     [TestFixture]
     public class Class1
     {
-        static float ExpectedPremium;
+        static float expectedPremium;
         static Calculator test;
 
         [SetUp]
@@ -25,10 +25,20 @@ namespace ClassLibrary1
         {
             Assert.NotNull(test, "not created");
         }
-        [Test(Description ="get each persons premium")]
+        [Test(Description = "get premium for 25yo male")]
         public void Test2()
         {
-
+            expectedPremium = 6.0f;
+            float actualPremium = test.CalcPremium(25, "male");
+            Assert.AreEqual(expectedPremium, actualPremium);
         }
-    }
+        [TestCase(17, "female", ExpectedResult = 4.0f)]
+        [TestCase(20, "female", ExpectedResult = 5.0f)]
+        [TestCase(32, "female", ExpectedResult = 2.5f)]
+        [TestCase(5, "male", ExpectedResult = 4.0f)]
+        [TestCase(22, "male", ExpectedResult = 6.0f)]
+        [TestCase(40, "male", ExpectedResult = 4.0f)]
+        [TestCase(50, "male", ExpectedResult = 0.0f)]
+        
+    } 
 }
