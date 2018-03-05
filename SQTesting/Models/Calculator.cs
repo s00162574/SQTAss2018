@@ -11,29 +11,29 @@ namespace SQTesting.Models
         {
             float premium;
 
-            if (gender == "female")
-                if ((age >= 18) && (age <= 30))
+            if (gender == "female")//a
+                if ((age >= 18) && (age <= 30))//b
                     premium = 5.0f;
-                else
-                    if (age >= 31)
-                    premium = 2.50f;
-                else
+                else//c
+                    if (age >= 31)//d
+                        premium = 2.50f;
+                    else//e
+                        premium = 0.0f;
+            else //f
+                if (gender == "male")//g
+                    if ((age >= 18) && (age <= 35))//h
+                        premium = 6.0f;
+                    else//i
+                        if (age >= 36)//j
+                            premium = 5.0f;
+                        else//k
                     premium = 0.0f;
-            else
-    if (gender == "male")
-                if ((age >= 18) && (age <= 35))
-                    premium = 6.0f;
-                else
-                   if (age >= 36)
-                    premium = 5.0f;
-                else
-                    premium = 0.0f;
-            else
+            else//l
                 premium = 0.0f;
 
-            if (age >= 50)
+            if (age >= 50)//m
                 premium = premium * 0.15f;
-            return premium;
+            return premium;//n
         }
 
     }
