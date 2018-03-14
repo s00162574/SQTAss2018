@@ -39,6 +39,12 @@ namespace ClassLibrary1
         [TestCase(22, "male", ExpectedResult = 6.0f)]
         [TestCase(40, "male", ExpectedResult = 4.0f)]
         [TestCase(50, "male", ExpectedResult = 0.0f)]
-        
-    } 
+        [TestCase(65,"mule", ExpectedResult = 4.0f)]
+
+        public float Test3(int age, string gender)
+        {
+            float actualResult = test.CalcPremium(age, gender);
+            return actualResult;
+        }
+    }
 }
