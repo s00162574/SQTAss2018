@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using fitnesse.fixtures;
+using fit;
 
 namespace SQTesting.Models
 {
@@ -36,5 +38,18 @@ namespace SQTesting.Models
             return premium;//p
         }
 
+    }
+    public class myFixture : ColumnFixture
+    {
+        public int age;
+        public string gender;
+
+        public Calculator c1 = new Calculator();
+
+        public double calcPremium()
+        {
+            return c1.CalcPremium(age, gender);
+
+        }
     }
 }

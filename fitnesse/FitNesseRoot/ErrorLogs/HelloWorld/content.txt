@@ -1,0 +1,8 @@
+
+!3 !-fit:dotnet2\Runner.exe-!
+|'''Date: '''| 4:38:43 p.m. (GMT) on Dé Luain, Feabhra 19, 2018 |
+|'''Test Page: '''|.HelloWorld|
+|'''Command: '''| !-dotnet2\Runner.exe -r fitnesse.fitserver.FitServer,dotnet2\fit.dll "s:\CLASSES\VIVION KINSELLA\TESTING_2018\HelloWorld\HelloWorld\bin\Debug\HelloWorld.dll" vLABSTAFF5 8000 3-! |
+|'''Exit code: '''| 0 |
+|'''Time elapsed: '''| 0.639 seconds |
+

@@ -1,0 +1,13 @@
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+# this is the path to the fixture code
+!path C:\Users\Joe\source\repos\SQTAss2018\SQTesting\bin\SQTesting.dll
+!| SQTesting.Models.myFixture |
+| age | gender | calcPremium? |
+| 17 | female | 0.0 |
+| 20 | female | 5.0 |
+| 32 | female | 3.5 |
+| 5  | male | 0.0 |
+| 22 | male | 6.0 |
+| 40 | male | 5.0 |
+| 65 | male | 3.0 |

@@ -1,0 +1,8 @@
+
+!3 !-fit:dotnet2\Runner.exe-!
+|'''Date: '''| 4:48:42 PM (GMT) on Wednesday, March 14, 2018 |
+|'''Test Page: '''|.MyAssignment|
+|'''Command: '''| !-dotnet2\Runner.exe -r fitnesse.fitserver.FitServer,dotnet2\fit.dll C:\Users\Joe\source\repos\SQTAss2018\SQTesting\bin\SQTesting.dll DESKTOP-TO25HTN 8000 7-! |
+|'''Exit code: '''| 2 |
+|'''Time elapsed: '''| 1.123 seconds |
+

@@ -32,14 +32,13 @@ namespace ClassLibrary1
             float actualPremium = test.CalcPremium(25, "male");
             Assert.AreEqual(expectedPremium, actualPremium);
         }
-        [TestCase(17, "female", ExpectedResult = 4.0f)]
+        [TestCase(17, "female", ExpectedResult = 0.0f)]
         [TestCase(20, "female", ExpectedResult = 5.0f)]
-        [TestCase(32, "female", ExpectedResult = 2.5f)]
-        [TestCase(5, "male", ExpectedResult = 4.0f)]
+        [TestCase(32, "female", ExpectedResult = 3.5f)]
+        [TestCase(5, "male", ExpectedResult = 0.0f)]
         [TestCase(22, "male", ExpectedResult = 6.0f)]
-        [TestCase(40, "male", ExpectedResult = 4.0f)]
-        [TestCase(50, "male", ExpectedResult = 0.0f)]
-        [TestCase(65,"mule", ExpectedResult = 4.0f)]
+        [TestCase(40, "male", ExpectedResult = 5.0f)]
+        [TestCase(65,"male", ExpectedResult = 3.0f)]
 
         public float Test3(int age, string gender)
         {

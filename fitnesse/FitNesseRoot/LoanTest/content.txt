@@ -1,0 +1,13 @@
+!define COMMAND_PATTERN {%m -r fitnesse.fitserver.FitServer,dotnet2\fit.dll %p}
+!define TEST_RUNNER {dotnet2\Runner.exe}
+!path D:\TDD\TDD\bin\Debug\TDD.dll
+
+!|TDD.FitTest|
+|emp Salary|loanAmount|DetermineLoan?|
+|20000|60000|false|
+|20000|500|true|
+|20000|4000|true|
+|20000|6000|false|
+
+
+ 
