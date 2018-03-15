@@ -5,8 +5,9 @@
 !| SQTesting.Models.myFixture |
 | age | gender | calcPremium? |
 | 17 | female | 0.0 |
-| 20 | female | 5.0 |
-| 32 | female | 3.5 |
+| 18 | female | 5.0 |
+| 35 | female | 5.0 |
+| 36 | female | 3.5 |
 | 5  | male | 0.0 |
 | 22 | male | 6.0 |
 | 40 | male | 5.0 |

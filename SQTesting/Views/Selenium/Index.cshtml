@@ -1,0 +1,58 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{ ViewBag.Title = "Index";
+    string message0 = "";
+
+    if(IsPost)
+    {
+        SQTesting.Models.Calculator c1 = new SQTesting.Models.Calculator();
+
+      message0=string.Format("{0}" ,c1.CalcPremium(Convert.ToInt32(Request.Form["age"]), Request.Form["gender"]));
+
+
+
+    }
+}
+
+<!DOCTYPE html>
+<html>
+<body>
+    <form method="post">
+        <fieldset id="gender">
+            <div>
+                <label id="gender">Gender</label>
+                <input type="text" name="gender" value="@Request.Form["gender"]" />
+            </div>
+        </fieldset>
+        <fieldset id="age">
+            <div>
+                <label id="age">Age</label>
+                <input type="number" name="age" value="@Request.Form["age"]"/>
+            </div>
+        </fieldset>
+        <fieldset id="expected">
+            <div>
+                <label id="expected">Expected Result</label>
+                <input type="number" name="expected" value="@Request.Form["expected"]"/>
+            </div>
+        </fieldset>
+        <fieldset id="calculate">
+            <div>
+                <input type="submit" name="calculate" />
+            </div>
+        </fieldset>
+    </form>
+
+    <fieldset>
+        <p>@message0</p>
+        
+    </fieldset>
+</body>
+</html>
+
+
+
+
+
